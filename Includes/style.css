@@ -1,0 +1,225 @@
+
+/*ul, li{
+	padding: 0px;
+	margin: 0px;
+	float:right;
+	font-family:Segoe UI, Verdana, Geneva, sans-serif; 
+}*/
+ul.dropmenu{
+	position: relative;
+	margin: 0px;
+	display:block;
+	float:right;	
+	font-family:Segoe UI, Verdana, Geneva, sans-serif; 
+	font-size: 12px;
+	text-align:left;
+	width:405px;
+
+	
+	
+}
+.dropmenu li{
+	position: relative;
+	list-style: none;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+.dropmenu li a{
+	height: 15px;
+	padding:0px 4px 0px 13px;
+	display: block;
+	cursor: point;
+	border-right:1px solid #406176;
+	color: #FFFFFF;
+	text-decoration: none;
+
+}
+.dropmenu li a.selected{
+background-color:#02121c;
+	
+}
+.dropmenu li a.hover{
+background-color:#02121c;
+}
+.dropmenu li a.selected span{
+background-color:#02121c;
+	
+}
+
+.dropmenu li span{
+	display: block;
+	float: right;
+	height: 10px;
+	width: 10px;
+	background:transparent url(Images/arrow_up.png) repeat-x scroll 0 0;
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	font-size: 12px;
+}
+.dropmenu li  a:hover span{
+	background:transparent url(Images/arrow_hover.png) repeat-x scroll 0 0;
+}
+.dropmenu li:hover ul, .dropmenu li:hover div{
+	display: block;
+}
+.dropmenu ul{
+	position: absolute;
+	display: none;
+	width: 140px;
+	padding: 0px;
+	margin: 0px;
+	border-bottom: 1px solid #ccc;
+	background: #FFFFFF url(Images/gradient.png) repeat-x scroll 0 0;
+}
+.dropmenu ul li{
+	border: 0;
+	float: none;
+}
+.dropmenu ul a {
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  white-space: nowrap;
+  display:block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.dropmenu ul a:hover {
+	color:#333333 !important;
+	text-decoration: none;
+	background-color: #cccccc; 
+	background-image: none;
+	font-weight:normal;
+}
+.dropmenu div ul{
+	position: relative;
+	display: block;
+}
+.dropmenu li div{
+	font:14px Segoe UI, Verdana, Geneva, sans-serif; font-weight:normal; color:#fff; padding-left:12px;
+	background: #02121c url(Images/gradient.png) repeat-x scroll 0 0;
+	/*border: 1px solid #ccc;*/
+	padding: 5px;
+	display: none;
+	position: absolute;
+
+-moz-border-radius-topleft: 0px;
+-moz-border-radius-topright: 0px;
+-moz-border-radius-bottomright: 5px;
+-moz-border-radius-bottomleft: 5px;
+
+border-top-left-radius: 0px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+
+-khtml-border-top-left-radius: 0px;
+-khtml-border-top-right-radius: 0px;
+-khtml-border-bottom-right-radius: 5px;
+-khtml-border-bottom-left-radius: 5px;
+
+-webkit-border-top-left-radius: 0px;
+-webkit-border-top-right-radius: 0px;
+-webkit-border-bottom-right-radius: 5px;
+-webkit-border-bottom-left-radius: 5px;
+
+}
+.dropmenu li div ul{
+	border: none;
+	background: none;
+	position: relative !important;
+
+}
+.dropmenu li div a{
+	border: none;
+	border-bottom: 1px solid #666666;
+	font-family:Segoe UI, Verdana, Geneva, sans-serif; font-weight:normal;
+	height:25px;
+}
+.dropmenu li div div{
+	display: block;
+	position: relative;
+	background: none;
+	border: none;
+}
+.dropmenu li div div a{
+	display: inline;
+	border: none;
+	color: #666;
+	text-decoration: underline;
+	padding: 0px;
+	margin: 0px;
+	text-transform: none;
+}
+.dropmenu li div div a:hover{
+	color: #000;
+	text-decoration: none;
+}
+ul.left{
+	float: left;
+	width: 145px;
+}
+ul.right{
+	float: right;
+	width: 145px;
+}
+.small{
+	color: #666;
+	font-size: 10px;
+	padding: 10px 5px 8px 5px !important;
+	display: block;
+	clear: both;
+}
+.products{
+	width: 180px;
+	padding: 15px !important;
+}
+.products ul{
+	width: 100%;
+}
+.products ul li{
+	border-bottom: 1px solid #ccc;
+	height: 40px;
+	padding: 10px 0px;
+}
+.products h2{
+	font-size: 16px;
+	padding: 2px 0px 3px 0px;
+	margin: 0px;
+}
+.products p{
+	color: #666;
+	font-size: 10px;
+	padding: 0px;
+	margin: 0px;
+}
+.products img{
+	float: left;
+	padding-right: 10px;
+}
+.products  ul li a{
+	display: inline;
+	border: none;
+	color: #666;
+	text-decoration: underline;
+	padding: 0px;
+	margin: 0px;
+	text-transform: none;
+}
+.products  ul li  a:hover{
+	color: #000 !important;
+	text-decoration: none;
+	background: none !important;
+}
+
+.tutorials{
+	width: 300px;
+}
+
+.login{
+	padding: 15px !important;
+	width: 180px;
+}

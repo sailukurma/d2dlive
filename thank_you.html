@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Apps Guru Business IT Consulting Pvt. Ltd.</title>
+<link href="Includes/AppGuru.css" type="text/css" rel="stylesheet"/>
+	 <!-- Navigation Menu CSS Start Here-->
+	 <link type="text/css" href="Menu/menu.css" rel="stylesheet" />
+    <!--<script type="text/javascript" src="Menu/jquery.js"></script>-->
+	 <script type="text/javascript" src="Menu/menu.js"></script>
+	
+	<style type="text/css">
+
+div#menu { margin:0px auto; }
+.style4 {font-size: 22px}
+    </style>
+
+<!-- Navigation Menu CSS  End Here-->
+<script language="JavaScript1.1">
+<!--
+
+
+
+function trim(inputString) {
+   if (typeof inputString != "string") { return inputString; }
+   var retValue = inputString;
+   var ch = retValue.substring(0, 1);
+   while (ch == " ") 
+   {
+      retValue = retValue.substring(1, retValue.length);
+      ch = retValue.substring(0, 1);
+   }
+   ch = retValue.substring(retValue.length-1, retValue.length);
+   while (ch == " ")
+    {
+      retValue = retValue.substring(0, retValue.length-1);
+      ch = retValue.substring(retValue.length-1, retValue.length);
+   }
+   while (retValue.indexOf("  ") != -1)
+    {
+      retValue = retValue.substring(0, retValue.indexOf("  ")) + retValue.substring(retValue.indexOf("  ")+1, retValue.length); // Again, there are two spaces in each of the strings
+   }
+   return retValue;
+}
+
+function validatemail(str) {
+
+var at="@"
+var dot="."
+var lat=str.indexOf(at)
+var lstr=str.length
+var ldot=str.indexOf(dot)
+if (str.indexOf(at)==-1){
+alert("Invalid E-mail ID")
+return false
+}
+
+if (str.indexOf(at)==-1 || str.indexOf(at)==0 || str.indexOf(at)==lstr){
+alert("Invalid E-mail ID")
+return false
+}
+
+if (str.indexOf(dot)==-1 || str.indexOf(dot)==0 || str.indexOf(dot)==lstr){
+alert("Invalid E-mail ID")
+return false
+}
+
+if (str.indexOf(at,(lat+1))!=-1){
+alert("Invalid E-mail ID")
+return false
+}
+
+if (str.substring(lat-1,lat)==dot || str.substring(lat+1,lat+2)==dot){
+alert("Invalid E-mail ID")
+return false
+}
+
+if (str.indexOf(dot,(lat+2))==-1){
+alert("Invalid E-mail ID")
+return false
+}
+
+if (str.indexOf(" ")!=-1){
+alert("Invalid E-mail ID")
+return false
+}
+
+return true
+}
+
+
+function validateintegers(str,name) 
+{
+	var validchar="1234567890";
+	var txt=str.value;
+	var retval=true;
+	for (var i=0;i<txt.length;i++)
+	{
+		var ex=validchar.indexOf(txt.substring(i,i+1));
+		if(ex==-1)
+		{
+		alert ("invalid "+ name);
+		retval=false;		
+		str.focus();
+		break;
+
+		}	
+	}
+	return retval;	
+}
+
+function validempty(txt,name)
+{
+	val=txt.value;
+	var retval=true;
+	if (trim(val)=="")
+	{
+	alert ("Please enter the "+name);
+	txt.focus();
+	retval=false;
+	}
+	return retval; 
+}
+function validemptyCombo(cbo,name)
+{
+	val=cbo.value;
+	var retval=true;
+	if (val=="0" || val=="-1")
+	{
+	alert ("Please Select "+name);
+	cbo.focus();
+	retval=false;
+	}
+	return retval; 
+}
+
+function valideurl(txt,name,key)
+{
+	val=trim(txt).value;
+	val1=key.value;
+	var retval=true;
+	if (val1=="Yes" && val=="")
+	{
+	alert ("Please Enter "+name);
+	txt.focus();
+	retval=false;
+	}
+	return retval; 
+}
+
+
+
+function validateform()
+{
+		if(
+		(validempty(document.form1.txt_name,"Name")==false ) ||
+		(validempty(document.form1.txt_email,"Email")==false ) ||		
+		(validatemail(document.form1.txt_email.value)==false ) ||
+		(validempty(document.form1.txt_company,"Company Details")==false )  ||
+		(validempty(document.form1.txt_telephone,"Telephone Number")==false ) ||
+		(validateintegers(document.form1.txt_telephone,"Telephone Number")==false) ||
+		(validempty(document.form1.txt_mobile,"Mobile")==false ) ||
+		(validateintegers(document.form1.txt_mobile,"Mobile")==false) ||
+		(validempty(document.form1.txt_find,"where you found my website")==false ) ||
+		(validempty(document.form1.txt_details,"your Requirements")==false ) )
+			return false;
+		else 
+			return true;
+}
+
+
+//-->
+</script>
+
+</head>
+
+<body>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center">
+      <!-- Logo Table Start Here-->
+    <table width="960" border="0" cellspacing="0" cellpadding="0" style="padding-top:11px;">
+      <tr>
+        <td align="left"><a href="index.html"><img src="Images/Logo.jpg" width="127" height="59" border="0"  style="margin-bottom:6px;"/></a></td>
+        <td align="right"><img src="Images/Oracle.jpg" width="164" height="26" /></td>
+      </tr>
+    </table>
+    <!-- Logo Table End Here-->
+       <!-- Menu Table Start Here-->
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="center" class="NavigationBg"><table width="960" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+			
+			<div id="menu">
+    <ul class="menu">
+        <li><a href="index.html" class="parent"><span><img src="Menu/Images/home_icon.png" style="vertical-align:middle; padding-right:5px; padding-bottom:3px;border:0px;" />Home</span></a>        </li>
+        <li><a href="#" class="parent"><span><img src="Menu/Images/who_icon.png" style="vertical-align:middle; padding-right:5px; padding-bottom:3px; border:0px;" />Who We are</span></a>
+            <div style="padding-left:37px;"><ul>
+                <li><a href="aboutus.html" class="parent"><span>About Us</span></a>                </li>
+               <li><a href="founders.html"><span>Founders</span></a></li>
+               <li><a href="principals.html"><span>Principals</span></a></li>
+                        <li><a href="valueproposition.html"><span>Value Proposition</span></a></li>
+                   
+            </ul></div>
+        </li>
+        <li><a href="#"><span><img src="Menu/Images/wtwedo_icon.png" style="vertical-align:middle; padding-right:5px; padding-bottom:3px;border:0px;" />What We do</span></a>
+		<div style="padding-left:25px;"><ul>
+                <li><a href="erpselectionservices.html" class="parent"><span>ERP Selection & Services</span></a>                </li>
+                <li><a href="#"><span>Oracle Practice Offerings</span></a>
+				<div><ul>
+				  <li><a href="oracleserviceoffering.html"><span>Oracle Service Offerings</span></a>
+				    <li><a href="deliverymodel.html"><span>Delivery Model-Implementation</span></a>
+					  <li><a href="maintenance.html"><span>Maintenance and Support</span></a>
+					    <li><a href="upgradeandmigration.html"><span>Upgrade and Migration</span></a>
+						 <li><a href="metrics.html"><span>Metrics</span></a>
+				</ul></div>
+				</li>
+                        
+                   
+            </ul></div>
+		
+		</li>
+        <li class="last"><a href="contactus.php"><span><img src="Menu/Images/contact_icon.png" style="vertical-align:middle; padding-right:5px; padding-bottom:3px;border:0px;" />Contact Us</span></a></li>
+    </ul>
+</div>
+			
+			
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+    <!-- Menu Table End Here-->
+      
+    <!-- Image Animation Table Start Here-->
+    
+      <table width="960" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+        <td>
+      <img src="Images/contactus.jpg" />
+        </td>
+      </tr>
+  </table>
+  
+    <!-- Image Animation Table End Here-->
+      <!-- News Table Start Here-->
+      
+      <table width="960" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="left" style="padding-top:12px;" class="BreadCum">Home  &gt;  <span class="BreadCum_Active">Contact Us </span></td>
+        </tr>
+      </table>
+      
+       <!-- News Table End Here-->
+      <!-- Service Offering Table Start Here-->
+      
+      <table width="960" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="left" class="Serviceshline">
+          <table width="960" border="0" cellspacing="0" cellpadding="0" style="padding-top:18px;">
+            <tr>
+              <td width="275" rowspan="2" align="left" valign="top" class="LeftVline" style="padding-right:5px;"><table width="230" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td colspan="2" class="LeftHead" style="padding-bottom:7px;">Contact Us </td>
+                </tr>
+                <tr>
+                  <td  class="LeftnavBg" onmouseover="style.backgroundColor='#c8c8c8';"
+onmouseout="style.backgroundColor='#dcdcdc'"><img src="Images/Arrow_Links.gif" width="5" height="10" style="padding-right:5px; padding-left:10px;" /><a href="contactus.html">Enquiry Form </a></td>
+                </tr>
+				 <tr>
+                  <td  class="LeftnavBg" onmouseover="style.backgroundColor='#c8c8c8';"
+onmouseout="style.backgroundColor='#dcdcdc'"><span><img src="Images/Arrow_Links.gif" width="5" height="10" style="padding-right:5px; padding-left:10px;" /></span><a href="officelocations.html"  class="LeftNavLinks">Office Locations </a></td>
+                </tr>
+							
+            </table>
+                <br />
+                <table width="230" height="197" border="0" cellpadding="8" cellspacing="2">
+                  <tr>
+                    <td height="193" style="background-color:#e6e6e6;"><p ><span style="font-size:18px; color:#0081bd;"><strong>Apps Guru Consulting</strong></span><br />
+                      <br />
+                      <span style="font-size:14px;">Anil Rachamalla</span><br />
+                      <br />
+                      <span style="font-size:12px; color:#0081bd;">Email:</span><a href="mailto:anil@appsguruconsulting.com" class="copyright_links">anil@appsguruconsulting.com</a><br />
+                      <br />
+                      <span style="font-size:12px; color:#0081bd;"> Phone:</span> <span style="font-size:12px; font-family: 'Comic Sans MS', cursive;">+254 - 736209390 </span>- Kenya<br />
+                      <span style="font-size:12px; font-family: 'Comic Sans MS', cursive; padding-left:40px;">+91 - 9866392862</span> - India
+                     
+                    </p></td>
+                  </tr>
+                </table>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+              
+                <table width="170" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="70" class="Weareon" style="padding-top:12px;">We are on</td>
+                    <td align="right" style="padding-top:12px;"><a href="https://www.facebook.com/AppsGuruBusinessItConsultingLtd" target="_blank"><img src="Images/FaceBook.jpg" width="20" height="20" border="0" /></a>&nbsp; <a href="http://www.linkedin.com/company/apps-guru-consulting" target="_blank"><img src="Images/LinkediN.jpg" width="20" height="20" border="0" /></a> &nbsp;<a href="https://twitter.com/AppsGuruConsult" target="_blank"><img src="Images/Twitter.jpg" width="20" height="20" border="0" /></a>&nbsp;<a href="https://plus.google.com/u/0/101210634093796790403/" target="_blank"> <img src="Images/gplus.jpg" width="20" height="20" border="0" /></a></td>
+                  </tr>
+              </table></td>
+              <td width="685" align="left" valign="top" style="padding-left:10px; padding-right:15px; ">
+			    <p class="SubHeads">Contact Us </p>
+			
+			    <div align="center"><br />
+			      <br />
+			      <br />
+			      <p><span class="LeftHead">Thank you for contacting us. </span></p>
+                  <p><span class="LeftHead">We will get in touch with you shortly.</span></p>
+			    </div>
+				    </td>
+            </tr>
+          
+      </table>
+      <!-- Service Offering Table End Here-->
+        
+          <!-- Footer Table Start Here-->
+          <table width="960" border="0" cellspacing="0" cellpadding="0" style="padding-top:13px; padding-bottom:23px;">
+  <tr>
+    <td class="Serviceshline">
+    <table width="960" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left" class="copyright">Copyright © 2012 Apps Guru Business IT Consulting Pvt. Ltd.</td>
+    <td align="right"><a href="mailto:careers@appsguruconsulting.com" class="copyright_links"> Careers</a>  <span class="devider"> | </span>  <span><a href="sitemap.html" class="copyright_links">Sitemap</a></span></td>
+  </tr>
+</table>
+
+    </td>
+  </tr>
+</table>
+
+        <!-- Footer Table End Here-->
+
+</td>
+</tr>
+</table>
+</body>
+</html>
